@@ -1,0 +1,6 @@
+---
+displayName: DevOps Culture and Practice (DO500)
+description: DO500 is an all in one stack to accompany Red Hat DevOps Culture and Practice Enablement. It contains Nodejs, Mongodb and Ansible
+tags: ["nodejs", "vuejs", "mongodb", "ansible"]
+icon: https://d33wubrfki0l68.cloudfront.net/857a1f2fe5907d0390446dd3e2a875186c6362f2/a158b/images/loop-positions/foundation-technical.svg
+globalMemoryLimit: 3Gi
