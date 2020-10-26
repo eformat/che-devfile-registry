@@ -11,7 +11,7 @@ projects:
 components:
   -
     type: chePlugin
-    id: redhat/java/latest
+    id: redhat/java8/latest
   -
     type: dockerimage
     alias: maven
@@ -28,7 +28,7 @@ components:
         value: $(JAVA_OPTS)
     memoryLimit: 512Mi
     endpoints:
-      - name: '8080/tcp'
+      - name: '8080-tcp'
         port: 8080
     mountSources: true
     volumes:

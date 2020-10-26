@@ -8,15 +8,18 @@ projects:
     source:
       type: git
       location: "https://github.com/spring-projects/spring-petclinic.git"
+      commitId: 4953f87917b449a404a7f1f4e2457836b9eafbbc
 components:
   -
     type: chePlugin
     id: redhat/java/latest
     memoryLimit: 1512Mi
+    preferences:
+      java.server.launchMode: Standard
   -
     type: dockerimage
     alias: tools
-    image: quay.io/eclipse/che-java8-maven:nightly
+    image: quay.io/eclipse/che-java11-maven:nightly
     env:
       - name: MAVEN_CONFIG
         value: ""
@@ -29,7 +32,7 @@ components:
         value: $(JAVA_OPTS)
     memoryLimit: 768Mi
     endpoints:
-      - name: '8080/tcp'
+      - name: '8080-tcp'
         port: 8080
     mountSources: true
     volumes:
